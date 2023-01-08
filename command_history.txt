@@ -1,0 +1,77 @@
+ 1667  git init
+ 1669  git commit -m 'Initial commit'
+ 1670  git remote add origin git@github.com:Critteros/MPT-Oneflow-example.git
+ 1672  git checkout -b 'feature/add-button-component'
+ 1678  git rm --cached src/App.tsx
+ 1680  git commit -m 'Added Button component'
+ 1683  git commit -m 'Added custom button to the main page'
+ 1684  git push origin feature/add-button-component
+ 1685  git rebase maain
+ 1687  git checkout master
+ 1690  git checkout - 
+ 1693  git merge --no-ff feature/add-button-component
+ 1696  git checkout 1330250
+ 1697  git checkout -b 'feature/configure-tools'
+ 1702  yarn add --dev --exact prettier
+ 1704  echo {}> .prettierrc.json
+ 1706  yarn add --dev husky lint-staged
+ 1707  npx husky install
+ 1708  npm pkg set scripts.prepare="husky install"
+ 1709  npx husky add .husky/pre-commit "npx lint-staged"
+ 1710  yarn add -D eslint
+ 1711  yarn add -D eslint-config-prettier
+ 1712  yarn add -D @typescript-eslint/parser @typescript-eslint
+ 1714  yarn add -D @typescript-eslint/eslint-plugin@latest 
+ 1717  yarn add -D @typescript-eslint/parser
+ 1718  yarn lint
+ 1720  git add package.json yarn.lock
+ 1721  git commit -m 'Instatlled eslint, prettier, husky dependencies' 
+ 1723  git add .husky/
+ 1724  git commit -m 'Configured git hooks'
+ 1725  git add .eslintrc 
+ 1726  git commit -m 'Configured eslint'
+ 1729  git commit -m 'Configured prettier'
+ 1731  git rebase main
+ 1732  git log --oneline
+ 1734  git push origin feature/configure-tools
+ 1736  git merge --no-ff feature/configure-tools
+ 1738  git checkout -b release/v0.1.0
+ 1741  git commit -m 'Changed version to 0.1.0"
+ 1742  git commit -m 'Changed version to 0.1.0'
+ 1743  git tag v0.1.0
+ 1746  git push oriigin release/v0.1.0
+ 1747  git push origin release/v0.1.0
+ 1749  git merge release/v0.1.0 --ff-only
+ 1752  git push --tags origin main
+ 1753  git checkout tags/v0.1.0
+ 1754  git checkout -b hotfix/v0.1.1
+ 1757  git commit -m 'Fixed typo in App.tsx'
+ 1758  git tag v0.1.1
+ 1760  git merge hotfix/v0.1.1 --ff-only
+ 1762  git push origin hotfix/v0.1.1
+ 1763  git checkout -
+ 1766  git push origin --tags origin main
+ 1767  git push origin --tags  main
+ 1769  git checkout -b feature/add-MUI
+ 1770  yarn add @mui/material @emotion/react @emotion/styled
+ 1773  git commit -m 'Installed Material UI'
+ 1776  git commit -m 'Added MUI TextField on main page'
+ 1777  git push origin feature/add-MUI
+ 1779  git merge feature/add-MUI --no-ff
+ 1781  git checkkout -b feature/change-main-page
+ 1783  git stash
+ 1784  git checkout -b feature/change-main-page
+ 1785  git stash pop
+ 1787  git commit -m 'Changed main page'
+ 1788  git push origin feature/change-main-page
+ 1790  git merge feature/change-main-page --no-ff
+ 1792  git checkout -b release/v0.2.0
+ 1793  git status
+ 1794  git add --all
+ 1795  git commit -m 'Changed version to 0.2.0'
+ 1796  git tag v0.2.0
+ 1797  git push origin release/v0.2.0
+ 1798  git checkout main
+ 1799  git merge release/v0.2.0 --ff-only
+ 1800  git push origin main
+ 1801  git lg3
